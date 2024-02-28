@@ -41,7 +41,7 @@
 	%% Address \\
 	%% \texttt{email} \\
 }
-\date{2024 year}
+\date{2024 год}
 
 %%\renewcommand{\shorttitle}{\textit{arXiv} Template}
 
@@ -58,13 +58,10 @@
 \begin{document}
 \maketitle
 
-\begin{abstract}
-   Neural Ordinary Differential Equation (Neural ODE) has been proposed as a continuous
-approximation to the ResNet architecture. Some commonly used regularization mechanisms
-in discrete neural networks (e.g. dropout, Gaussian noise) are missing in current Neural ODE
-networks. Later - this idea has been developed in the Neural SDE model. In this paper, we propose a way of modification of this model, mentioning the such theoretical side of SDE, like phase trajectories. Our framework
-can model various types of noise injection frequently used in discrete networks for regularization purpose, such as dropout and additive/multiplicative noise in each block. 
-\end{abstract}
+\begin{Аннотация}
+    Сама идея использования обыкновенных дифференциальных уравнений("ОДУ" отсюда и далее) далеко не так нова, как могло бы показаться на первый взгляд. Так, примерно с 2017-го года она была использована для создания и теоретического обоснования корректности работы модели Neural ODE. Тем не менее, такой метод был всё ещё слаб в робастном смысле: то есть модель легко подпадала под влияние гауссовского шума, а также была уязвима к состязательным атакам. Модель Neural SDE уже строилась на использовании стохастических дифференциальных уравнений("СДУ" отсюда и далее) и была в этом плане эффективнее своего предшественника. Математический аппарат требовался ещё более серьезный, ведь для вычисления решения СДУ без знаний стохастического анализа, исчисления Ито и Стратоновича обойтись было нельзя. Данная статья предлагает ещё сильнее углубиться в математический аппарат, на котором строится модель Neural SDE. В статье будет рассмотрено, как вычисление фазовых траекторий СДУ обеспечивает качественный прогноз аномалий во временном ряду. Таким образом это предоставит как возможность эффективнее бороться с шумами, так и, в частности, полезный инструмент для упреждения "чёрных лебедей", которые могли бы нарушить корректную работу Neural SDE в виду высокой корреляции элементов анализируемой выборки между собой.
+    
+\end{Аннотация}
 
 
 \keywords{SDE \and Stratonovich integral \and More}
