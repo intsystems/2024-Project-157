@@ -25,6 +25,8 @@ Abstract
 
 Данная статья предлагает углубиться в математический аппарат, на котором строится модель Neural SDE. В ней будет рассмотрено, как вычисление фазовых траекторий СДУ обеспечивает качественный прогноз аномалий во временном ряду. Таким образом это предоставит как возможность эффективнее бороться с шумами, так и, в частности, полезный инструмент для упреждения "чёрных лебедей", которые могли бы нарушить корректную работу Neural SDE в виду высокой корреляции элементов анализируемой выборки между собой.
 
+This article suggests delving into the mathematical apparatus on which the Neural SDE model is based. It will consider how the calculation of the SDU phase trajectories provides a qualitative forecast of anomalies in the time series. Thus, this will provide both an opportunity to deal with noise more effectively, and, in particular, a useful tool for anticipating "black swans" that could disrupt the correct operation of Neural SDE due to the high correlation of the elements of the analyzed sample with each other.
+
 Research publications
 ===============================
 1. 
